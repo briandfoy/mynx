@@ -65,7 +65,11 @@ my %WriteMakefile = (
 		},
 
 	'PREREQ_PM' => {
-		'Carp' => '0',
+		'Carp'              => '0',
+		'Digest::MD5'       => '0',
+		'HTML::TreeBuilder' => '0',
+		'HTML::FormatText'  => '0',
+		'Mojolicious'       => '9',
 		},
 
 	'EXE_FILES' => [ 'script/mynx' ],
