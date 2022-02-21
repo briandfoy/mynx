@@ -1,0 +1,25 @@
+#!/Users/brian/bin/perl
+use v5.34;
+use experimental qw(signatures);
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+
+use Mynx;
+
+say Mynx->format_html_string(
+	Mynx->preprocess( fetch($ARGV[0]) )
+	);
+
+
+sub fetch ( $url ) {
+	state $rc = require Mojo::UserAgent;
+	my $ua = Mojo::UserAgent->new;
+	$ua->max_connections(0);
+
+	my $url = Mojo::URL->new( $ARGV[0] );
+	( $url, $ua->get( $url )->res->body );
+	}
+
+
+
+
