@@ -1,12 +1,10 @@
 #!/usr/bin/env perl
-use v5.34;
-use experimental qw(signatures);
 use FindBin;
 use lib "$FindBin::Bin/../lib";
 
 use ynx;
 
-say f($ARGV[0]);
+f($ARGV[0]);
 
 
 
