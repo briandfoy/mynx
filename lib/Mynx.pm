@@ -158,6 +158,11 @@ sub _7650beecf29baef1909862220e427dea ( $body ) {
 	"$dom";
 	}
 
+sub _497e9b97fa60cac8d7f283efc990d94f ( $body ) {
+	my $dom = Mojo::DOM->new($body)->at( 'div.rad-article' );
+	"$dom";
+	}
+
 # this is the empty string
 sub _d41d8cd98f00b204e9800998ecf8427e ( $body ) {
 	carp "Preprocessing text without a URL, so doing nothing to it";
