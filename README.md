@@ -10,4 +10,8 @@ it's just `mynx` (minks). It's kinda like a cat, but just different.
 
 And, I'll do this with host-specific preprocessing.
 
+This is not a web browser and I don't care about following links. In
+that case I can just use `lynx`. Fetch the single page, read it, and
+move on in life.
+
 ![](images/minks.jpg)
