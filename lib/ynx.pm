@@ -41,9 +41,6 @@ sub f ( $url ) {
 	say Mynx->format_html_string(
 		Mynx->preprocess( fetch($url) )
 		);
-
-
-
 	}
 
 =back
