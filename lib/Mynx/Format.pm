@@ -3,8 +3,13 @@ use v5.34;
 use experimental qw(signatures);
 
 use Exporter qw(import);
-our @EXPORT = qw(html_format);
+our @EXPORT = qw(format_html);
+
 our $VERSION = '0.011';
+
+=over 4
+
+=cut
 
 sub _html_tree ( $class, $body ) {
 	use HTML::TreeBuilder;
@@ -12,6 +17,10 @@ sub _html_tree ( $class, $body ) {
 	$tree->eof;
 	$tree;
 	}
+
+=item format_html( HTML )
+
+=cut
 
 # I'll have to look at formatting HTML through Mojo::DOM
 sub format_html ( $class, $body ) {
@@ -25,5 +34,9 @@ sub format_html ( $class, $body ) {
 
 	$formatter->format( $tree );
 	}
+
+=back
+
+=cut
 
 1;
