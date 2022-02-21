@@ -68,6 +68,8 @@ my %WriteMakefile = (
 		'Carp' => '0',
 		},
 
+	'EXE_FILES' => [ 'script/mynx' ],
+
 	'META_MERGE' => {
 		'meta-spec' => { version => 2 },
 		resources => {
