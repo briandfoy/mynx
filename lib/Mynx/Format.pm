@@ -4,6 +4,7 @@ use experimental qw(signatures);
 
 use Exporter qw(import);
 our @EXPORT = qw(html_format);
+our $VERSION = '0.011';
 
 sub _html_tree ( $class, $body ) {
 	use HTML::TreeBuilder;

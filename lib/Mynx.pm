@@ -8,6 +8,8 @@ use Mojo::DOM;
 
 use Mynx::Format;
 
+our $VERSION = '0.011';
+
 =head1 NAME
 
 Mynx - pre-host HTML preprocessing without exposing the hosts
