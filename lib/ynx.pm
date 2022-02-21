@@ -6,7 +6,7 @@ use Mynx;
 
 use Exporter qw(import);
 
-our @EXPORT     = qw( d );
+our @EXPORT     = qw( d f );
 our @EXPORT_ALL = @EXPORT;
 
 our $VERSION = '0.011';
