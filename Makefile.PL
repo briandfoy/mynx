@@ -44,7 +44,7 @@ my $github    = 'https://github.com/briandfoy/mynx';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
-	'MIN_PERL_VERSION' => '5.034',
+	'MIN_PERL_VERSION' => '5.032',
 
 	'NAME'          => $module,
 	'ABSTRACT_FROM' => $main_file,

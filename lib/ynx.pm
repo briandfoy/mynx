@@ -1,5 +1,5 @@
 package ynx;
-use v5.34;
+use v5.32;
 use experimental qw(signatures);
 
 use Mynx;
