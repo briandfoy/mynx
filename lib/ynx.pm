@@ -9,7 +9,7 @@ use Exporter qw(import);
 our @EXPORT     = qw( d f );
 our @EXPORT_ALL = @EXPORT;
 
-our $VERSION = '0.011';
+our $VERSION = '0.012';
 
 =over 4
 

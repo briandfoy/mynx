@@ -5,7 +5,7 @@ use experimental qw(signatures);
 use Exporter qw(import);
 our @EXPORT = qw(format_html);
 
-our $VERSION = '0.011';
+our $VERSION = '0.012';
 
 =over 4
 
