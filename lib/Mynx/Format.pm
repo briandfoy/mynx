@@ -7,6 +7,8 @@ our @EXPORT = qw(format_html);
 
 our $VERSION = '0.012';
 
+=encoding utf8
+
 =over 4
 
 =cut
@@ -37,6 +39,29 @@ sub format_html ( $class, $body ) {
 
 =back
 
+=head1 TO DO
+
+
+=head1 SEE ALSO
+
+
+=head1 SOURCE AVAILABILITY
+
+This source is in Github:
+
+	http://github.com/perlreview/mynx/
+
+=head1 AUTHOR
+
+brian d foy, <bdfoy@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright © 2022, brian d foy <bdfoy@cpan.org>. All rights reserved.
+
+You may redistribute this under the terms of the Artistic License 2.0.
+
 =cut
 
 1;
+

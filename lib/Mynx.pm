@@ -10,6 +10,8 @@ use Mynx::Format;
 
 our $VERSION = '0.012';
 
+=encoding utf8
+
 =head1 NAME
 
 Mynx - pre-host HTML preprocessing without exposing the hosts
@@ -149,10 +151,6 @@ sub preprocess ( $class, $url, $body ) {
 	$body = $coderef->($body);
 	}
 
-=back
-
-=cut
-
 sub _basic ( $body, $main_selector, $remove_selectors = [] ) {
 	my $dom = Mojo::DOM->new($body)->at( $main_selector );
 
@@ -183,5 +181,31 @@ sub _d41d8cd98f00b204e9800998ecf8427e ( $body ) {
 	carp "Preprocessing text without a URL, so doing nothing to it";
 	$body;
 	}
+
+=back
+
+=head1 TO DO
+
+
+=head1 SEE ALSO
+
+
+=head1 SOURCE AVAILABILITY
+
+This source is in Github:
+
+	http://github.com/perlreview/mynx/
+
+=head1 AUTHOR
+
+brian d foy, <bdfoy@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright © 2022, brian d foy <bdfoy@cpan.org>. All rights reserved.
+
+You may redistribute this under the terms of the Artistic License 2.0.
+
+=cut
 
 1;
