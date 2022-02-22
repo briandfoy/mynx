@@ -153,14 +153,29 @@ sub preprocess ( $class, $url, $body ) {
 
 =cut
 
-sub _7650beecf29baef1909862220e427dea ( $body ) {
-	my $dom = Mojo::DOM->new($body)->at( 'article' );
+sub _basic ( $body, $main_selector, $remove_selectors = [] ) {
+	my $dom = Mojo::DOM->new($body)->at( $main_selector );
+
+	foreach my $selector ( $remove_selectors->@* ) {
+		$dom->find( $selector )->each( sub { $_->remove } );
+		};
+
 	"$dom";
 	}
 
+sub _7650beecf29baef1909862220e427dea ( $body ) {
+	_basic( $body, 'article' );
+	}
+
 sub _497e9b97fa60cac8d7f283efc990d94f ( $body ) {
-	my $dom = Mojo::DOM->new($body)->at( 'div.rad-article' );
-	"$dom";
+	_basic( $body, 'div.rad-article' );
+	}
+
+sub _8d8a438a06dec87b12b0804c2cbf1af9 ( $body ) {
+	my @selectors = qw(
+		div.arc_ad div.image div.link-related_links_link
+		);
+	_basic( $body, 'article#article-body', \@selectors );
 	}
 
 # this is the empty string
