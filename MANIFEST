@@ -11,6 +11,7 @@ MANIFEST			This list of files
 MANIFEST.SKIP
 README.md
 script/mynx
+SECURITY.md
 t/compile.t
 t/load.t
 t/pod.t
