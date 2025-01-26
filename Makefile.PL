@@ -67,8 +67,10 @@ my %WriteMakefile = (
 	'PREREQ_PM' => {
 		'Carp'              => '0',
 		'Digest::MD5'       => '0',
-		'HTML::TreeBuilder' => '0',
+		'HTML::Element'     => '0',
 		'HTML::FormatText'  => '0',
+		'HTML::Tree'        => '0',
+		'HTML::TreeBuilder' => '0',
 		'Mojolicious'       => '9',
 		},
 
